@@ -3,7 +3,7 @@ import json
 
 class ContoCorrente:
 
-    def __init__(self, nome, saldoIniziale = 0, fileTransazioni = "transazioni.json")
+    def __init__(self, nome, saldoIniziale = 0, fileTransazioni = "transazioni.json"):
         self.nome = nome.lower()
         self.__saldo = saldoIniziale
         self.transazioni = []
@@ -13,7 +13,7 @@ class ContoCorrente:
 
     def deposita(self, importo):
         if importo > 0:
-            self.saldo += importo
+            self.__saldo += importo
             self.registraTransazione("Deposito", importo)
             print(f"Hai depositato {importo}€. Saldo attuale: {self.__saldo}€ ")
         else:
@@ -45,3 +45,24 @@ class ContoCorrente:
             print("\nCronologia delle transazioni:")
             for t in self.transazioni:
                 print(f"{t['data']} - {t['tipo']}: {t['importo']}€")
+
+    def salvaTransazioni(self):
+        try:
+            with open(self.fileTransazioni, 'r') as file:
+                dati = json.load(file)
+        except FileNotFoundError:
+            dati = {}
+
+        dati[self.nome] = self.transazioni
+
+        with open(self.fileTransazioni, 'w') as file:
+            json.dump(dati, file, indent=4)
+    
+    def caricaTransazioni(self):
+        try:
+            with open(self.fileTransazioni, 'r') as file:
+                dati =json.load(file)
+                self.transazioni = dati.get(self.nome, [])
+                self.__saldo = sum(t['importo'] for t in self.transazioni)
+        except FileNotFoundError:
+            print("Nessun file di transazioni trovato. Ne verrà creato uno nuovo.")

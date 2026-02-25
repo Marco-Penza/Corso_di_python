@@ -1,0 +1,39 @@
+{
+    "marco": [
+        {
+            "data": "2026-02-25 16:40:07",
+            "tipo": "Apertura conto",
+            "importo": 0
+        },
+        {
+            "data": "2026-02-25 16:42:32",
+            "tipo": "Apertura conto",
+            "importo": 0
+        },
+        {
+            "data": "2026-02-25 16:43:30",
+            "tipo": "Apertura conto",
+            "importo": 0
+        },
+        {
+            "data": "2026-02-25 16:43:34",
+            "tipo": "Deposito",
+            "importo": 100.0
+        },
+        {
+            "data": "2026-02-25 16:50:38",
+            "tipo": "Apertura conto",
+            "importo": 0
+        },
+        {
+            "data": "2026-02-25 16:50:43",
+            "tipo": "Deposito",
+            "importo": 500.0
+        },
+        {
+            "data": "2026-02-25 16:51:55",
+            "tipo": "Prelievo",
+            "importo": -20.0
+        }
+    ]
+}
