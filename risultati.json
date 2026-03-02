@@ -1,0 +1,27 @@
+[
+  {
+    "giocatore": "marco",
+    "data": "2026-03-02 11:29:06",
+    "vincitore": "CPU"
+  },
+  {
+    "giocatore": "marco",
+    "data": "2026-03-02 11:29:56",
+    "vincitore": "GIOCATORE"
+  },
+  {
+    "giocatore": "marco",
+    "data": "2026-03-02 11:30:19",
+    "vincitore": "GIOCATORE"
+  },
+  {
+    "giocatore": "marco",
+    "data": "2026-03-02 11:30:28",
+    "vincitore": "CPU"
+  },
+  {
+    "giocatore": "marco",
+    "data": "2026-03-02 11:30:43",
+    "vincitore": "GIOCATORE"
+  }
+]
