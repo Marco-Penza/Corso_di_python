@@ -18,4 +18,5 @@ Qui ho tutti gli esercizi
 
 # **Texas_holdem**
 
-Questo è un miniprogramma in fase di sviluppo
+Primo programma poker completato, guardare le commit per capire le fasi fino al completamento.
+abbiamo sia la versione con o senza interfaccia grafica. (avviare da terminale "poker" per la prima versione, altrimenti avviare "poker_gui" per vedere la seconda)
